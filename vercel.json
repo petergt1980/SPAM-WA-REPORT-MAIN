@@ -1,0 +1,14 @@
+{
+  "buildCommand": "pnpm --filter @workspace/spam-wa-report run build",
+  "outputDirectory": "artifacts/spam-wa-report/dist/public",
+  "installCommand": "npm install -g pnpm@10.26.1 && pnpm install --no-frozen-lockfile",
+  "framework": null,
+  "env": {
+    "PORT": "3000",
+    "BASE_PATH": "/",
+    "ENABLE_EXPERIMENTAL_COREPACK": "1"
+  },
+  "rewrites": [
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
